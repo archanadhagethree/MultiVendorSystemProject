@@ -102,7 +102,8 @@ Admin:
 - admin@example.com / password
 
 Vendor:
-- vendor1@example.com / password
+- vendor1@example.com / vendor1@example
+- vendor2@example.com / password
 
 Customer:
 - user@example.com / password
