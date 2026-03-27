@@ -43,17 +43,56 @@ This project simulates a real-world marketplace where customers can purchase pro
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/MultiVendorSystem.git
-cd MultiVendorSystem
-composer install
-npm install
-npm run dev
-php artisan migrate
-php artisan db:seed
-php artisan storage:link
-php artisan serve
+# 1. Clone the repository
+git clone https://github.com/archanadhagethree/MultiVendorSystemProject.git
 
-```
+# 2. Go into the project directory
+cd MultiVendorSystemProject
+
+# 3. Install PHP dependencies
+composer install
+
+# 4. Install Node.js dependencies
+npm install
+
+# 5. Build frontend assets
+npm run dev
+
+# 6. Copy .env.example to .env
+cp .env.example .env   # On Windows PowerShell: copy .env.example .env
+
+# 7. Generate application key
+php artisan key:generate
+
+# 8. Update .env for database
+# Open .env and set the following:
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=multiVendorSystem
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# 9. Update mail settings in .env
+# MAIL_MAILER=log
+# MAIL_SCHEME=null
+# MAIL_HOST=127.0.0.1
+# MAIL_PORT=2525
+
+# 10. Run migrations
+php artisan migrate
+
+# 11. Seed the database
+php artisan db:seed
+
+# 12. Create storage symlink
+php artisan storage:link
+
+# 13. Serve the application
+php artisan serve
+ ```
+
+
 
 ---
 
