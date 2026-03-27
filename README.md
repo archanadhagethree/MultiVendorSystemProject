@@ -109,6 +109,7 @@ Vendor:
 Customer:
 - user@example.com / password
 
+Note : You can create multiple customers via Register button on login page 
 ---
 
 ## 🧠 Architecture
