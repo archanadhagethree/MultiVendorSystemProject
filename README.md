@@ -86,6 +86,7 @@ php artisan migrate
 php artisan db:seed
 
 # 12. Create storage symlink
+rm -rf public/storage
 php artisan storage:link
 
 # 13. Serve the application
