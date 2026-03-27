@@ -116,71 +116,72 @@ Listener:
 
 # Project Folder Structure
 
+
 ```
-**multi-vendor-system/**
-├── **app/**
-│   ├── **Console/Commands/**  
-│   │   └── *CancelUnpaidOrders.php*
-│   ├── **Events/**  
-│   │   └── *OrderPlaced.php*
-│   ├── **Exceptions/**  
-│   ├── **Http/**
-│   │   ├── **Controllers/**
-│   │   │   ├── **Admin/**  
-│   │   │   │   └── *OrderController.php*
-│   │   │   ├── **Vendor/**  
-│   │   │   │   ├── *ProductController.php*  
-│   │   │   │   └── *OrderController.php*
-│   │   │   ├── *CartController.php*  
-│   │   │   ├── *CheckoutController.php*  
-│   │   │   ├── *OrderController.php*  
-│   │   │   └── *ProductController.php*
-│   │   ├── **Middleware/**  
-│   │   │   ├── *IsAdmin.php*  
-│   │   │   └── *IsVendor.php*
-│   │   ├── **Requests/**  
-│   │   │   └── *AddToCartRequest.php*
-│   ├── **Listeners/**  
-│   │   └── *LogOrderPlaced.php*
-│   ├── **Mail/**  
-│   │   └── *OrderPlacedMail.php*
-│   ├── **Models/**  
-│   │   ├── *User.php*  
-│   │   ├── *Vendor.php*  
-│   │   ├── *Product.php*  
-│   │   ├── *Cart.php*  
-│   │   ├── *CartItem.php*  
-│   │   ├── *Order.php*  
-│   │   ├── *OrderItem.php*  
-│   │   └── *Payment.php*
-│   ├── **Policies/**  
-│   │   └── *OrderPolicy.php*
-│   ├── **Repositories/**  
-│   │   ├── **Interfaces/**  
-│   │   │   ├── *OrderRepositoryInterface.php*  
-│   │   │   └── *ProductRepositoryInterface.php*  
-│   │   ├── *ProductRepository.php*  
-│   │   └── *OrderRepository.php*
-│   ├── **Services/**  
-│   │   ├── *CartService.php*  
-│   │   └── *CheckoutService.php*
-│   └── **Providers/**
-├── **database/**
-│   ├── **factories/**  
-│   ├── **migrations/**  
-│   └── **seeders/**  
-│       └── *DatabaseSeeder.php*
-├── **resources/**
-│   └── **views/**
-│       ├── *admin/*  
-│       ├── *cart/*  
-│       ├── *emails/*  
-│       ├── *orders/*  
-│       ├── *products/*  
-│       └── *vendors/*
-├── **routes/**
-├── **storage/**
-└── *README.md*
+multi-vendor-system/
+├── app/
+│   ├── Console/Commands/  
+│   │   └── CancelUnpaidOrders.php
+│   ├── Events/  
+│   │   └── OrderPlaced.php
+│   ├── Exceptions/  
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/  
+│   │   │   │   └── OrderController.php
+│   │   │   ├── Vendor/  
+│   │   │   │   ├── ProductController.php  
+│   │   │   │   └── OrderController.php
+│   │   │   ├── CartController.php  
+│   │   │   ├── CheckoutController.php  
+│   │   │   ├── OrderController.php  
+│   │   │   └── ProductController.php
+│   │   ├── Middleware/  
+│   │   │   ├── IsAdmin.php  
+│   │   │   └── IsVendor.php
+│   │   ├── Requests/  
+│   │   │   └── AddToCartRequest.php
+│   ├── Listeners/  
+│   │   └── LogOrderPlaced.php
+│   ├── Mail/  
+│   │   └── OrderPlacedMail.php
+│   ├── Models/  
+│   │   ├── User.php  
+│   │   ├── Vendor.php  
+│   │   ├── Product.php  
+│   │   ├── Cart.php  
+│   │   ├── CartItem.php  
+│   │   ├── Order.php  
+│   │   ├── OrderItem.php  
+│   │   └── Payment.php
+│   ├── Policies/  
+│   │   └── OrderPolicy.php
+│   ├── Repositories/  
+│   │   ├── Interfaces/  
+│   │   │   ├── OrderRepositoryInterface.php  
+│   │   │   └── ProductRepositoryInterface.php  
+│   │   ├── ProductRepository.php  
+│   │   └── OrderRepository.php
+│   ├── Services/  
+│   │   ├── CartService.php  
+│   │   └── CheckoutService.php
+│   └── Providers/
+├── database/
+│   ├── factories/  
+│   ├── migrations/  
+│   └── seeders/  
+│       └── DatabaseSeeder.php
+├── resources/
+│   └── views/
+│       ├── admin/  
+│       ├── cart/  
+│       ├── emails/  
+│       ├── orders/  
+│       ├── products/  
+│       └── vendors/
+├── routes/
+├── storage/
+└── README.md
 ```
 
 
